@@ -420,7 +420,9 @@ function web_editor() {
     // Extracts the query string and turns it into an object of key/value pairs.
     function get_qs_context() {
         var query_string = window.location.search.substring(1);
-        if(window.location.href.indexOf("file://") == 0 ) {
+	console.log(window.location.href);
+        if(window.location.href.indexOf("file://") == 0
+		|| window.location.href.indexOf("http://python.microbit.org") == 0 ) {
             // Running from the local file system so switch off network share.
             $('#command-share').hide();
             return {};
