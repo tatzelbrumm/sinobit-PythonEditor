@@ -436,9 +436,15 @@ function web_editor() {
         return result;
     }
 
+    function setupBetaBar() {
+        $("#hide-betamsg").click(function(){
+	    $("#betabar").hide();
+	});
+    }
+
     setupEditor(get_qs_context());
     setupButtons();
+    setupBetaBar();
 };
-
 // Call the web_editor function to start the editor running.
 web_editor();
