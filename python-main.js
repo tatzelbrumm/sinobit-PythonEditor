@@ -340,8 +340,17 @@ function web_editor() {
         // Triggered when a user clicks the blockly button. Toggles blocks on/off.
         var blockly = $('#blockly');
         if(blockly.is(':visible')) {
+            dirty = false;
             blockly.hide();
+            editor.ACE.setReadOnly(false);
         } else {
+            if(dirty) {
+                var msg = "You have unsaved code. Using blocks will change your code. You may lose your changes. Do you want to continue?";
+                if(!confirm(msg)) {
+                    return;
+                }
+            }
+            editor.ACE.setReadOnly(true);
             blockly.show();
             blockly.css('width', '33%');
             blockly.css('height', '100%');
