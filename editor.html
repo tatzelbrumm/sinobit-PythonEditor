@@ -198,33 +198,106 @@ Nicholas and Damien.
         <script src="blockly/blockly_compressed.js"></script>
         <script src="blockly/blocks_compressed.js"></script>
         <script src="blockly/python_compressed.js"></script>
-        <script src="custom_blocks/definitions/music.js"></script>
-        <script src="custom_blocks/generators/music.js"></script>
-        <script src="custom_blocks/definitions/speech.js"></script>
-        <script src="custom_blocks/generators/speech.js"></script>
+        <script src="microbit_blocks/blocks/microbit.js"></script>
+        <script src="microbit_blocks/generators/accelerometer.js"></script>
+        <script src="microbit_blocks/generators/buttons.js"></script>
+        <script src="microbit_blocks/generators/compass.js"></script>
+        <script src="microbit_blocks/generators/display.js"></script>
+        <script src="microbit_blocks/generators/image.js"></script>
+        <script src="microbit_blocks/generators/microbit.js"></script>
+        <script src="microbit_blocks/generators/music.js"></script>
+        <script src="microbit_blocks/generators/neopixel.js"></script>
+        <script src="microbit_blocks/generators/pins.js"></script>
+        <script src="microbit_blocks/generators/radio.js"></script>
+        <script src="microbit_blocks/generators/speech.js"></script>
         <script src="blockly/msg/js/en.js"></script>
-	<script src="custom_blocks/messages/en/microbit.js"></script>
+	    <script src="microbit_blocks/messages/en/messages.js"></script>
         <script src="python-main.js"
             type="application/javascript"></script>
         <script>vex.defaultOptions.className = 'vex-theme-wireframe';</script>
         <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.c9025956238e7d486d74379e14f50282.js"></script>
 
         <xml id="blockly-toolbox" style="display: none">
-	     <category name="Music" colour="95">
-	      <block type="music_play_built_in"></block>
-	      <block type="music_pitch"></block>
-	      <block type="music_play_list_of_notes"></block>
-	      <block type="music_stop"></block>
-	      <block type="music_get_tempo"></block>
-	      <block type="music_set_tempo"></block>
-	      <block type="music_reset"></block>
-            </category>
-            <category name="Speech" colour="63">
-	      <block type="speech_say"></block>
-	      <block type="speech_pronounce"></block>
-	      <block type="speech_sing"></block>
-	      <block type="image_colours"></block>
-            </category>
+
+  <category name="Accelerometer" colour="20">
+    <block type="microbit_accelerometer_get_x"></block>
+    <block type="microbit_accelerometer_get_y"></block>
+    <block type="microbit_accelerometer_get_z"></block>
+    <block type="microbit_accelerometer_was_gesture"></block>
+    <block type="microbit_accelerometer_is_gesture"></block>
+    <block type="microbit_accelerometer_get_gestures"></block>
+    <block type="microbit_accelerometer_current_gesture"></block>
+  </category>
+  <category name="Buttons" colour="10">
+    <block type="microbit_button_is_pressed"></block>
+    <block type="microbit_button_was_pressed"></block>
+    <block type="microbit_button_get_presses"></block>
+  </category>
+  <category name="Compass" colour="340">
+    <block type="microbit_compass_calibrate"></block>
+    <block type="microbit_compass_is_calibrated"></block>
+    <block type="microbit_compass_heading"></block>
+    <block type="microbit_compass_get_field_strength"></block>
+  </category>
+  <category name="Display" colour="0">
+    <block type="microbit_display_get_pixel"></block>
+    <block type="microbit_display_set_pixel"></block>
+    <block type="microbit_display_clear"></block>
+    <block type="microbit_display_show_image"></block>
+    <block type="microbit_display_show_animation"></block>
+    <block type="microbit_display_scroll"></block>
+    <block type="microbit_display_on"></block>
+    <block type="microbit_display_off"></block>
+    <block type="microbit_display_is_on"></block>
+  </category>
+  <category name="Image" colour="300">
+    <block type="microbit_image_builtins"></block>
+    <block type="microbit_image_copy"></block>
+    <block type="microbit_image_invert"></block>
+    <block type="microbit_image_create"></block>
+  </category>
+  <category name="Microbit" colour="210">
+    <block type="microbit_microbit_panic"></block>
+    <block type="microbit_microbit_reset"></block>
+    <block type="microbit_microbit_sleep"></block>
+    <block type="microbit_microbit_running_time"></block>
+    <block type="microbit_microbit_temperature"></block>
+  </category>
+  <category name="Music" colour="95">
+    <block type="microbit_music_play_built_in"></block>
+    <block type="microbit_music_pitch"></block>
+    <block type="microbit_music_play_list_of_notes"></block>
+    <block type="microbit_music_reset"></block>
+    <block type="microbit_music_stop"></block>
+    <block type="microbit_music_set_tempo"></block>
+    <block type="microbit_music_get_tempo"></block>
+  </category>
+  <category name="Neopixel" colour="260">
+    <block type="microbit_neopixel_initialise"></block>
+    <block type="microbit_neopixel_clear"></block>
+    <block type="microbit_neopixel_show"></block>
+    <block type="microbit_neopixel_set"></block>
+  </category>
+  <category name="Pins" colour="120">
+    <block type="microbit_pin_touched"></block>
+    <block type="microbit_pin_read_analog"></block>
+    <block type="microbit_pin_write_analog"></block>
+    <block type="microbit_pin_read_digital"></block>
+    <block type="microbit_pin_write_digital"></block>
+  </category>
+  <category name="Radio" colour="330">
+    <block type="microbit_radio_on"></block>
+    <block type="microbit_radio_off"></block>
+    <block type="microbit_radio_config"></block>
+    <block type="microbit_radio_reset"></block>
+    <block type="microbit_radio_send_string"></block>
+    <block type="microbit_radio_receive"></block>
+  </category>
+  <category name="Speech" colour="65">
+    <block type="microbit_speech_say"></block>
+    <block type="microbit_speech_pronounce"></block>
+    <block type="microbit_speech_sing"></block>
+  </category>
 	    <sep></sep>
 	    <category name="Logic" colour="210">
 	      <block type="controls_if"></block>
