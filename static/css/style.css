@@ -10,6 +10,7 @@
 
 #blockly {
     display: none;
+    min-width: 570px;
 }
 
 /* Re-usable, generic rules */
