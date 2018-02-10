@@ -116,7 +116,7 @@ body, input {
   cursor: pointer;
 }
 
-.zoomer, 
+.zoomer,
 .saved-state {
   cursor: pointer !important;
 }
@@ -137,7 +137,7 @@ body, input {
   line-height: 2.1rem;
   padding: .1em;
   font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Symbola", sans-serif;
-  color: #336699;
+  color: #990000;
   background: #FFFFFF;
 }
 
@@ -149,7 +149,7 @@ body, input {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #336699;
+  color: #990000;
   text-decoration: none;
   background-image: url("../img/triangle.svg");
   background-size: 100%;
@@ -255,7 +255,7 @@ body, input {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #336699;
+  color: #990000;
   text-decoration: none;
   background-image: url("../img/triangle.svg");
   background-size: 100%;
@@ -287,7 +287,7 @@ body, input {
   line-height: 4.4rem;
   padding: .1em;
   font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Symbola", sans-serif;
-  color: #336699;
+  color: #990000;
   background: #FFFFFF;
 }
 

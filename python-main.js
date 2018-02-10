@@ -330,7 +330,7 @@ function web_editor(config) {
             });
         } else {
             // If there's no name, default to something sensible.
-            setName("microbit")
+            setName("sino:bit")
             // If there's no description, default to something sensible.
             setDescription("A MicroPython script");
             // A sane default starting point for a new script.
@@ -731,4 +731,3 @@ function web_editor(config) {
     checkVersion(qs);
     setupButtons();
 };
-
